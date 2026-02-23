@@ -3,7 +3,7 @@ cask "lctl" do
   name "lctl"
   desc "CLI for managing launchctl servers, sites, and deployments"
   homepage "https://launchctl.io"
-  version "0.1.0"
+  version "0.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,23 @@ cask "lctl" do
 
   on_macos do
     on_intel do
-      url "https://github.com/kkz6/launchctl-cli/releases/download/v#{version}/lctl-darwin-amd64.tar.gz"
-      sha256 "18b50163a24f76c4887830b544a743065548e22be3251cc7f23084fdec463a70"
+      url "https://sin1.contabostorage.com/launchctl-cli/v#{version}/lctl-darwin-amd64.tar.gz"
+      sha256 "6f2cbb8a6c0b289419eba3bc5c10b53086896ef6865981a39f91b17c0e5c18ff"
     end
     on_arm do
-      url "https://github.com/kkz6/launchctl-cli/releases/download/v#{version}/lctl-darwin-arm64.tar.gz"
-      sha256 "36cb49f9d1ae37d3b5cfb4257a87cec6ebf78c34b8fc2e590852ac12f26f8964"
+      url "https://sin1.contabostorage.com/launchctl-cli/v#{version}/lctl-darwin-arm64.tar.gz"
+      sha256 "9d25d2f8ca35c6295a2d8687f547de2623eba36529856f290013ee7cc39f8353"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/kkz6/launchctl-cli/releases/download/v#{version}/lctl-linux-amd64.tar.gz"
-      sha256 "b5a48d51408885d945ad6386e2123838cf31f3b4b21cca1052509707baff7aa3"
+      url "https://sin1.contabostorage.com/launchctl-cli/v#{version}/lctl-linux-amd64.tar.gz"
+      sha256 "4658068faf3ba51856b605ad1a2eb88480e1cb16cf84f98da6528aed307b17a8"
     end
     on_arm do
-      url "https://github.com/kkz6/launchctl-cli/releases/download/v#{version}/lctl-linux-arm64.tar.gz"
-      sha256 "6e23257748161f845d3b670077fd9bb93470beb11fca526340cdf8fee21b17bb"
+      url "https://sin1.contabostorage.com/launchctl-cli/v#{version}/lctl-linux-arm64.tar.gz"
+      sha256 "c83a598fdeacee0f4f9b129239db9ec072847a8cf2bf9a9e8007b39c4c9bb0ad"
     end
   end
 
