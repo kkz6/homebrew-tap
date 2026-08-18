@@ -5,21 +5,21 @@
 class Lctl < Formula
   desc "CLI for managing launchctl servers, sites, and deployments"
   homepage "https://launchctl.io"
-  version "0.2.3"
+  version "0.2.4"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://sin1.contabostorage.com/2fac7399ecc245c4b352abf9eb154e1d:launchctl-cli/v0.2.3/lctl-darwin-amd64.tar.gz"
-      sha256 "ace35a3fdc37cbfcba131cd6b8072b46297696e9d984428297447e374e69f8bc"
+      url "https://sin1.contabostorage.com/2fac7399ecc245c4b352abf9eb154e1d:launchctl-cli/v0.2.4/lctl-darwin-amd64.tar.gz"
+      sha256 "6dfca7c263a3db00e72b80abc0f64858073f9bc5608a072234fa8f07f6f8fe70"
 
       define_method(:install) do
         bin.install "lctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://sin1.contabostorage.com/2fac7399ecc245c4b352abf9eb154e1d:launchctl-cli/v0.2.3/lctl-darwin-arm64.tar.gz"
-      sha256 "b1c41b9b228c1ffa4454b2cc02cfa49be0b36c17ab1a105962517f4d340e2e17"
+      url "https://sin1.contabostorage.com/2fac7399ecc245c4b352abf9eb154e1d:launchctl-cli/v0.2.4/lctl-darwin-arm64.tar.gz"
+      sha256 "8c60f1cb7eb30174cd0783978db05b80bdbd9b55d6cd9d564c6e29c9dfc3500e"
 
       define_method(:install) do
         bin.install "lctl"
@@ -29,15 +29,15 @@ class Lctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://sin1.contabostorage.com/2fac7399ecc245c4b352abf9eb154e1d:launchctl-cli/v0.2.3/lctl-linux-amd64.tar.gz"
-      sha256 "3752c11b2af3fd7389cab178f4787acf8594d25e6d24f02e8e5c73a42cc3a94e"
+      url "https://sin1.contabostorage.com/2fac7399ecc245c4b352abf9eb154e1d:launchctl-cli/v0.2.4/lctl-linux-amd64.tar.gz"
+      sha256 "769215de532524850111ae38858031818fa5f5646b169846cdfbf496168a25eb"
       define_method(:install) do
         bin.install "lctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://sin1.contabostorage.com/2fac7399ecc245c4b352abf9eb154e1d:launchctl-cli/v0.2.3/lctl-linux-arm64.tar.gz"
-      sha256 "e3e9463c8812e67f45360433bd403e161feab7f0735148f516f08163dd76d6b0"
+      url "https://sin1.contabostorage.com/2fac7399ecc245c4b352abf9eb154e1d:launchctl-cli/v0.2.4/lctl-linux-arm64.tar.gz"
+      sha256 "28a54db279723775b82e43ce18a436de7f5a0836ba43ae7ddec9e5e87d1454de"
       define_method(:install) do
         bin.install "lctl"
       end
